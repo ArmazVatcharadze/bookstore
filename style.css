@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container1{
+    /* display: none; */
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+    transition: scroll .5s ease-in;
+}
+
+.section{
+    height: 100vh;
+    scroll-snap-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    /* transition: scroll .5s ease-in; */
+}
+
+.one{
+    background-color: aqua;
+    
+}
+
+.two{
+    background-color: rgb(235, 129, 8);
+}
+
+.three{
+    background-color: rgb(255, 0, 157);
+}
+
+.four{
+    background-color: rgb(226, 17, 17);
+}
+
+.five{
+    background-color: rgb(93, 99, 87);
+    
+}
+
+.back{
+    height: 36px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.five .book{
+    height: 375px;
+}
+
+.book{
+    width: 250px;
+    margin-top: -150px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+.wrapp{
+    margin-top: 100px;
+}
+
+.wrapp-content{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.book-name{
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.deskription{
+    display: none;
+}
+
+.author{
+    display: none;
+}
+
+.buyhere{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*  ======== CART =========*/
+
+.cart{
+    display: none;
+    height: 100%;
+    background-color: gray;
+    
+}
+
+
+
+.inner{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+.cartimg{
+    width: 316px;
+    height: 475px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+p{
+    margin-top:20px;
+}
+
+.text{
+    align-self: flex-start;
+    margin-left: 20px;
+    color: black;
+    
+}
+
+.price{
+    font-size: 20px;
+}
+
+#buy{
+    height: 48px;
+    width: 200px;
+    margin-top: 20px;
+    background: cyan;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+
+/*============ pay =============*/
+
+
+.form-outer{
+    object-fit: contain;
+    
+    display: flex;
+    
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.form-inner{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.form-inner h2{
+    margin-left: 30px;
+}
+
+.active{
+    border: 1px solid blue;
+}
+
+.background{
+    height: 1100px;
+}
+
+form{
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-arr{
+    width: 36px;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+
+
+
+input{
+    height: 48px;
+    width: 300px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+label{
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.form-inner .payment{
+    width: 100px;
+}
+
+
+.payment{
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit{
+    width: 200px;
+    margin: 20px;
+    height: 48px;
+    font-weight: 500;
+    background: rebeccapurple;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.pay{
+    display: none;
+}
+
+
+
+
+
+
+
+@media (min-width: 767px){
+    .section{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .wrapp-content{
+        width: 50%;
+        align-items: flex-start;
+        margin-top: -100px;
+    }
+
+    .author{
+        display: block;
+    }
+
+    .deskription{
+        display: block;
+    }
+
+    .inner{
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .text{
+        width: 60%;
+        margin-left: 40px;
+        align-self: center;
+    }
+}
